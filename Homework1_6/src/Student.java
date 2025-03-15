@@ -8,4 +8,9 @@ public class Student extends Person {
         this.year = year;
         this.grades = grades;
     }
+
+    @Override
+    public String toString() {
+        return "Student[ " + name + ", " + age + ", " + address + ", " + year + ", " + grades + "]";
+    }
 }

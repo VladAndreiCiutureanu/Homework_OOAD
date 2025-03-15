@@ -8,4 +8,10 @@ public class Teacher extends Person {
         this.subject = subject;
     }
 
+    @Override
+    public String toString() {
+
+        return "Teacher [name=" + name + ", age=" + age + ", address=" + address + ", school=" + school + ", subject=" + subject + "]";
+
+    }
 }

@@ -36,4 +36,9 @@ public class Course {
         }
         return false;
     }
+
+    @Override
+    public String toString() {
+        return "Course [teachers=" + teachers + ", students=" + students + "]";
+    }
 }
