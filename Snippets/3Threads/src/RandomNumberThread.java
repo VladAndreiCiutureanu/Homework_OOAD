@@ -15,7 +15,6 @@ public class RandomNumberThread extends Thread {
         Random random = new Random();
         return random.nextInt(max);
     }
-
     private void writeToFile(int number) {
         Path path = Paths.get("file" + threadNumber + ".txt");
         try{
@@ -24,7 +23,6 @@ public class RandomNumberThread extends Thread {
             System.out.println(e.getMessage());
         }
     }
-
     public void run() {
         int number = getRandomNumber(100);
         writeToFile(number);
